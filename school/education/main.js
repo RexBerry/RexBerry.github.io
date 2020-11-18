@@ -1,4 +1,4 @@
-document.write('debug');
+document.write('School');
 
 function move() {
   let el = document.getElementById('moving');
