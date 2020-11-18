@@ -1,3 +1,5 @@
+document.write('debug');
+
 function move() {
   let el = document.getElementById('moving');
   el.innerText = `This is true education ${Math.round(1000000 * Math.random())}`;
