@@ -6,4 +6,6 @@ function move() {
   el.style.top = `${Math.round(600 * Math.random())}px`;
 }
 
+move();
+
 setInterval(move, 10);
