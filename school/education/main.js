@@ -1,6 +1,6 @@
 document.write('School');
 
-ACCELERATION = 0.25;
+ACCELERATION = 0.15;
 NUM = 100;
 
 els = [];
