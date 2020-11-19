@@ -6,16 +6,18 @@ NUM = 100;
 els = [];
 pos = [];
 
+tick = 0;
+newPositions = [];
+oldPositions = [];
+
 for (let i = 0; i < NUM; i++) {
   let el = document.createElement('span');
+  el.visibility = 'visible';
   document.body.appendChild(el);
   els.push(el);
   pos.push([newX(), newY()]);
+  newPositions.push([0, 0]);
 }
-
-tick = 0;
-newPositions = [];
-for (let i = 0; i < NUM; i++) {newPositions.push([0, 0]);}
 
 function move() {
   
