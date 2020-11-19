@@ -1,6 +1,6 @@
 document.write('School');
 
-ACCELERATION = 0.15;
+ACCELERATION = 0.02;
 NUM = 100;
 
 els = [];
@@ -15,7 +15,7 @@ for (let i = 0; i < NUM; i++) {
   el.visibility = 'visible';
   document.body.appendChild(el);
   els.push(el);
-  pos.push([newX(), newY()]);
+  pos.push([Math.round(2000 * Math.random()), Math.round(2000 * Math.random())]);
   newPositions.push([0, 0]);
 }
 
