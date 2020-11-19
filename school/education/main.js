@@ -1,6 +1,6 @@
 document.write('School');
 
-ACCELERATION = 0.005;
+ACCELERATION = 0.01;
 NUM = 100;
 
 els = [];
@@ -50,7 +50,7 @@ function newX() {
   return Math.round(window.innerWidth * Math.random());
 }
 function newY() {
-  return Math.round(window.innerHeight * Math.random());
+  return Math.round((window.innerHeight - 50) * Math.random());
 }
 
 move();
