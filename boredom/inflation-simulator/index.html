@@ -18,12 +18,13 @@
         }
         input {
             font-family: 'Fira Mono', Consolas, monospace;
+            font-size: 2rem;
         }
     </style>
 </head>
 <body>
     <span>Inflation Rate (Yearly %)</span>
-    <input id="inflationInput" type=text" value="6.809">
+    <input id="inflationInput" type=text" value="6.809"><br><br>
     <span id="moneyDisplay">$1.0000000000</span>
     
     <script>
@@ -35,6 +36,9 @@
        let elapsedTime = (currentTime - startTime) / (1000 * 60 * 60 * 24 * 365.2425);
        let dollars = rate ** elapsedTime;
        document.getElementById("moneyDisplay").innerHTML = '$' + dollars.toFixed(10);
+    }
+                                             
+    setInterval(updateDisplay, 10);
     </script>
 </body>
 </html>
