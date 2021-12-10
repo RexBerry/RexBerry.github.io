@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inflation Simulator</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro|Fira+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro|Fira+Code">
     <style>
         html, body {
             font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
-            font-size: 2rem;
+            font-size: 1rem;
         }
         #moneyDisplay {
-            font-family: 'Fira Mono', Consolas, monospace;
-            font-size: 4rem;
+            font-family: 'Fira Code', Consolas, monospace;
+            font-size: 1.75rem;
         }
         input {
-            font-family: 'Fira Mono', Consolas, monospace;
-            font-size: 2rem;
+            font-family: 'Fira Code', Consolas, monospace;
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <span>Inflation Rate (Yearly %)</span>
-    <input id="inflationInput" type=text" value="6.809"><br><br>
+    <span>Annual Inflation Rate (%)</span>
+    <nbsp>
+    <input id="inflationInput" type=text" value="6.809">
+    <br><br>
     <span id="moneyDisplay">$1.0000000000</span>
     
     <script>
@@ -32,7 +34,7 @@
     
     function updateDisplay() {
        let currentTime = Date.now();
-       let rate = 1 + document.getElementById("inflationInput") / 100;
+       let rate = 1 + document.getElementById("inflationInput").value / 100;
        let elapsedTime = (currentTime - startTime) / (1000 * 60 * 60 * 24 * 365.2425);
        let dollars = rate ** elapsedTime;
        document.getElementById("moneyDisplay").innerHTML = '$' + dollars.toFixed(10);
