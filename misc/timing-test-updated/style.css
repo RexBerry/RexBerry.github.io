@@ -1,0 +1,53 @@
+* { 
+    font-family: adobe-garamond-pro, 'Times New Roman', Times, serif;
+}
+
+.no-select, br {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+h1, h2, h3, .sans-serif {
+    font-family: acumin-pro, -apple-system, Roboto, 'Neue Haas Grotesk Text Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h4, h5, h6 {
+    font-weight: 600;
+}
+
+.monospace {
+    font-family: ibm-plex-mono, Consolas, 'Cascadia Code', 'DejaVu Sans Mono', Menlo, Monaco, monospace;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+html, body {
+    font-size: max(calc(2.5 * max(1vh, 1vh)), 1em);
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+}
+
+button {
+    font-size: max(calc(2.5 * max(1vh, 1vh)), 1em);
+    cursor: pointer;
+    padding: 0.2em 0.25em 0.1em 0.25em;
+}
+
+h1 {
+    font-size: max(calc(5 * max(1vh, 1vh)), 1em);
+    font-weight: 600;
+}
