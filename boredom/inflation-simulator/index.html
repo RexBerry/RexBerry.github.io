@@ -9,38 +9,56 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro|Fira+Code">
     <style>
         html, body {
-            font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
-            font-size: 1rem;
+            background: #ddd;
+            font-size: calc(max(10em, 50vw) / 24);
+            margin-top: 1rem;
         }
-        #moneyDisplay {
+        #mainDiv {
+            font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+            font-size: 2em;
+            width: 14em;
+
+            margin: auto;
+            padding: 0.5em;
+            border-radius: 0.35em;
+            background: white;
+        }
+        #moneyDisplay, #moneyDisplay2 {
             font-family: 'Fira Code', Consolas, monospace;
-            font-size: 1.75rem;
+            font-size: 1.5em;
         }
         input {
             font-family: 'Fira Code', Consolas, monospace;
-            font-size: 1rem;
+            font-size: 1em;
+            width: 6em;
+            padding: 0.25em;
         }
     </style>
 </head>
 <body>
-    <span>Annual Inflation Rate (%)</span>
-    <nbsp>
-    <input id="inflationInput" type=text" value="6.809">
-    <br><br>
-    <span id="moneyDisplay">$1.0000000000</span>
-    
+    <div id="mainDiv">
+        <span>Annual Inflation Rate (%)</span>
+        <nbsp>
+        <input id="inflationInput" type=text" value="6.809">
+        <br><br>
+        <span id="moneyDisplay">$1.0000000000</span>
+        <span id="moneyDisplay2">$1.0000000000</span>
+    </div>
+
     <script>
-    startTime = Date.now();
-    
-    function updateDisplay() {
-       let currentTime = Date.now();
-       let rate = 1 + document.getElementById("inflationInput").value / 100;
-       let elapsedTime = (currentTime - startTime) / (1000 * 60 * 60 * 24 * 365.2425);
-       let dollars = rate ** elapsedTime;
-       document.getElementById("moneyDisplay").innerHTML = '$' + dollars.toFixed(10);
-    }
-                                             
-    setInterval(updateDisplay, 10);
+        startTime = Date.now();
+        
+        function updateDisplay() {
+            let currentTime = Date.now();
+            let rate = 1 + document.getElementById("inflationInput").value / 100;
+            let elapsedTime = (currentTime - startTime) / (1000 * 60 * 60 * 24 * 365.2425);
+            let dollars = rate ** elapsedTime;
+            document.getElementById("moneyDisplay").innerHTML = '$' + dollars.toFixed(10);
+            let dollars2 = rate ** -elapsedTime;
+            document.getElementById("moneyDisplay2").innerHTML = '$' + dollars2.toFixed(10);
+        }
+                                                
+        setInterval(updateDisplay, 10);
     </script>
 </body>
 </html>
