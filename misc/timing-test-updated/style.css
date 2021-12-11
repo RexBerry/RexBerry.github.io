@@ -35,19 +35,19 @@ p {
 }
 
 html, body {
-    font-size: max(calc(2.5 * max(1vh, 1vh)), 1em);
+    font-size: max(1em, calc(2.5 * max(1vh, 1vh)));
     font-weight: 400;
     width: 80%;
     margin: auto;
 }
 
-button {
-    font-size: max(calc(2.5 * max(1vh, 1vh)), 1em);
-    cursor: pointer;
-    padding: 0.2em 0.25em 0.1em 0.25em;
+h1 {
+    font-size: max(1em, calc(5 * max(1vh, 1vh)));
+    font-weight: 600;
 }
 
-h1 {
-    font-size: max(calc(5 * max(1vh, 1vh)), 1em);
-    font-weight: 600;
+button {
+    font-size: max(1em, calc(2.5 * max(1vh, 1vh)));
+    cursor: pointer;
+    padding: 0.2em 0.25em 0.1em 0.25em;
 }

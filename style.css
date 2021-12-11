@@ -1,0 +1,96 @@
+* { 
+    font-family: adobe-garamond-pro, 'Times New Roman', Times, serif;
+}
+
+.no-select, br {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+h1, h2, h3, a, .sans-serif {
+    font-family: acumin-pro, -apple-system, Roboto, 'Neue Haas Grotesk Text Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h4, h5, h6 {
+    font-weight: 600;
+}
+
+.monospace {
+    font-family: ibm-plex-mono, Consolas, 'Cascadia Code', 'DejaVu Sans Mono', Menlo, Monaco, monospace;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+html, body {
+    font-size: max(calc(2.5 * max(1vh, 1vh)), 1em);
+    font-weight: 400;
+    background: #eee;
+}
+
+body {
+    width: min(80vw, 8.5in);
+    margin: 0.75em auto;
+    background-color: white;
+    padding: 0.25em 1.25em 0.25em 1.25em;
+    border-radius: 0.4em;
+}
+
+#footer {
+    font-size: 0.75em;
+    display: table;
+    text-align: center;
+    color: #666;
+    
+    margin: 1em auto 0.5em auto;
+    width: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1 {
+    font-size: max(1em, calc(5 * max(1vh, 1vh)));
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: max(1em, calc(3.5 * max(1vh, 1vh)));
+    font-weight: 600;
+    margin-top: 0.9em;
+    padding-top: 0;
+}
+
+h1, h2 {
+    margin-bottom: 0.35em;
+}
+
+p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+a {
+    color: rgb(0, 128, 240);
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0.3em 1em;
+    padding: 0;
+}
