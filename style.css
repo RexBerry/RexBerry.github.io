@@ -37,7 +37,7 @@ p {
 html, body {
     font-size: max(calc(2.5 * max(1vh, 1vh)), 1em);
     font-weight: 400;
-    background: #eee;
+    background: #f0f0f0;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
     font-size: 0.75em;
     display: table;
     text-align: center;
-    color: #666;
+    color: #6a6a6a;
     
     margin: 1em auto 0.5em auto;
     width: 100%;
