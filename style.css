@@ -1,5 +1,5 @@
-* { 
-    font-family: adobe-garamond-pro, 'Times New Roman', Times, serif;
+* {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .no-select, br {
@@ -13,7 +13,7 @@
 }
 
 h1, h2, h3, a, .sans-serif {
-    font-family: acumin-pro, -apple-system, Roboto, 'Neue Haas Grotesk Text Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Neue Haas Grotesk Text Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3 {
@@ -25,7 +25,7 @@ h4, h5, h6 {
 }
 
 .monospace {
-    font-family: ibm-plex-mono, Consolas, 'Cascadia Code', 'DejaVu Sans Mono', Menlo, Monaco, monospace;
+    font-family: 'Cascadia Code', Consolas, 'DejaVu Sans Mono', Menlo, Monaco, monospace;
 }
 
 p {
@@ -53,7 +53,7 @@ body {
     display: table;
     text-align: center;
     color: #6a6a6a;
-    
+
     margin: 1em auto 0.5em auto;
     width: 100%;
 }
