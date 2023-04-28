@@ -1,0 +1,7 @@
+#gamma-test {
+    image-rendering: pixelated;
+}
+
+p {
+    width: 512px;
+}
