@@ -1,5 +1,3 @@
-document.write('School');
-
 ACCELERATION = 0.014;
 NUM = 100;
 
@@ -20,7 +18,7 @@ for (let i = 0; i < NUM; i++) {
 }
 
 function move() {
-  
+
   if (tick % 60 === 0) {
     oldPositions = newPositions;
     newPositions = [];
@@ -28,12 +26,12 @@ function move() {
       newPositions.push([newX(), newY()]);
     }
   }
-  
+
   let t = (tick % 60) / 60;
-  
+
   for (let i = 0; i < NUM; i++) {
     let el = els[i];
-    el.innerText = `This is true education ${Math.round(1000000 * Math.random())}`;
+    el.innerText = `Moving Text ${Math.round(1000000 * Math.random())}`;
     el.style.position = 'absolute';
     let x = (1 - t) * oldPositions[i][0] + t * newPositions[i][0];
     let y = (1 - t) * oldPositions[i][1] + t * newPositions[i][1];
@@ -42,10 +40,10 @@ function move() {
     el.style.left = `${pos[i][0]}px`;
     el.style.top = `${pos[i][1]}px`;
   }
-  
+
   tick++;
 }
-  
+
 function newX() {
   return Math.round(window.innerWidth * Math.random());
 }
