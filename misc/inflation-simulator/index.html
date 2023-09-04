@@ -6,48 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inflation Simulator</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro|Fira+Code">
+    <link rel="stylesheet" href="https://use.typekit.net/kvk1ivi.css">
+    <link rel="stylesheet" href="/style.css">
     <style>
-        html, body {
-            background: #f0f0f0;
-            font-size: calc(max(10em, 50vw) / 24);
-            margin-top: 1rem;
-        }
-        #mainDiv {
-            font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
-            font-size: 2em;
-            width: 14em;
-
-            margin: auto;
-            padding: 0.5em;
-            border-radius: 0.35em;
-            background: white;
-        }
         #moneyDisplay, #moneyDisplay2 {
-            font-family: 'Fira Code', Consolas, monospace;
             font-size: 1.5em;
         }
         input {
-            font-family: 'Fira Code', Consolas, monospace;
             font-size: 1em;
             width: 6em;
             padding: 0.25em;
         }
     </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div id="mainDiv">
-        <span>Annual Inflation Rate (%)</span>
-        <nbsp>
-        <input id="inflationInput" type=text" value="6.809">
+    <div id="main">
+        <h1>Inflation Simulator</h1>
+
+        <h3>Annual Inflation Rate (%)</h3>
+        <input id="inflationInput" type="text" value="3.178">
         <br><br>
-        <span id="moneyDisplay">$1.0000000000</span>
-        <span id="moneyDisplay2">$1.0000000000</span>
+        <span id="moneyDisplay" class="monospace">$1.0000000000</span>
+        <br>
+        <span id="moneyDisplay2" class="monospace">$1.0000000000</span>
     </div>
 
     <script>
         startTime = Date.now();
-        
+
         function updateDisplay() {
             let currentTime = Date.now();
             let rate = 1 + document.getElementById("inflationInput").value / 100;
@@ -57,7 +51,7 @@
             let dollars2 = rate ** -elapsedTime;
             document.getElementById("moneyDisplay2").innerHTML = '$' + dollars2.toFixed(10);
         }
-                                                
+
         setInterval(updateDisplay, 10);
     </script>
 </body>

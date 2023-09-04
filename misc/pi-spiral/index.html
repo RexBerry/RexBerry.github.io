@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pi Spiral</title>
 
+    <link rel="stylesheet" href="https://use.typekit.net/kvk1ivi.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        #canvas {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,16 +27,18 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <h1>Pi Spiral</h1>
+    <div id="main">
+        <h1>Pi Spiral</h1>
 
-    <p>The spiral might take a while to generate.</p>
-    <p>This runs much faster on Firefox than on Chrome.</p>
+        <p>The spiral might take a while to generate.</p>
+        <p>This runs much faster on Firefox than on Chrome.</p>
 
-    <button onclick="generate()">Generate</button>
+        <button onclick="generate()">Generate</button>
 
-    <br>
+        <br>
 
-    <canvas id="canvas"></canvas>
+        <canvas id="canvas"></canvas>
+    </div>
 
     <script src="main.js"></script>
 </body>

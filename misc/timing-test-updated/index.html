@@ -7,7 +7,7 @@
     <title>Timing Test</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/kvk1ivi.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,15 +18,17 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <h1>Timing Test</h1>
-    <p>Click the button below 33 times with as consistent a tempo as you can. Try to time your clicks a half-second apart. If there are any visible or audible timekeeping devices nearby (such as a ticking clock), try to ignore them.</p>
-    <button id="clickMe" class="no-select" onclick="clickMe()">Click me</button>&ensp;<span id="count"></span>
-    <br><br>
-    <span id="meanSpan"></span>
-    <br>
-    <span id="stddevSpan"></span>
-    <br><br>
-    <span id="clickTimes" class="monospace"></span>
+    <div id="main">
+        <h1>Timing Test</h1>
+        <p>Click the button below 33 times at a half-second interval. Try to be as consistent as possible. If there are any visible or audible timekeeping devices nearby (such as a ticking clock), try to ignore them.</p>
+        <button id="clickMe" class="no-select" onclick="clickMe()">Click me</button>&ensp;<span id="count"></span>
+        <br><br>
+        <span id="meanSpan"></span>
+        <br>
+        <span id="stddevSpan"></span>
+        <br><br>
+        <span id="clickTimes" class="monospace"></span>
+    </div>
 
     <script src="main.js"></script>
 </body>

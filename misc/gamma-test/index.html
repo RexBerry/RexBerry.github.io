@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamma Test</title>
 
+    <link rel="stylesheet" href="https://use.typekit.net/kvk1ivi.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #gamma-test {
+            image-rendering: pixelated;
+        }
+    </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,7 +24,11 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <img id="gamma-test" src="gamma_test.png">
-    <p>This image may not be displayed correctly if not using nearest-neighbor scaling. A lot of software ignores gamma when scaling images (e.g., using bilinear or bicubic filtering). CSS is used on this page to request the browser to use nearest-neighbor scaling when rendering the image above.</p>
+    <div id="main">
+        <h1>Gamma Test</h1>
+
+        <img id="gamma-test" src="gamma_test.png">
+        <p>This image may not be displayed correctly if not using nearest-neighbor scaling. A lot of software ignores gamma when scaling images, typically using bilinear filtering. CSS is used on this page to request the browser to use nearest-neighbor scaling when rendering the image above.</p>
+    </div>
 </body>
 </html>
