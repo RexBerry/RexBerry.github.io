@@ -18,6 +18,6 @@ button {
     height: 6vh;
 }
 
-#encoded-text {
+#encoded-text, #alphabet-text {
     word-break: break-all;
 }
