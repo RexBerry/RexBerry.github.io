@@ -21,7 +21,7 @@
 #hues-srgb {
     position: absolute;
     left: 30vw;
-    bottom: 55vh;
+    top: calc(45vh - 1 / 6 * 40vw);
     width: 40vw;
     height: calc(1 / 6 * 40vw);
 }
