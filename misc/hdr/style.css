@@ -1,0 +1,47 @@
+#hdr-overlay {
+    position: absolute;
+    left: 25vw;
+    top: 50vh;
+    width: 50vw;
+    height: 50vh;
+    padding: 0;
+    z-index: -1000000;
+}
+
+#hdr-overlay > video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: fill;
+}
+
+#hues-srgb {
+    position: absolute;
+    left: 30vw;
+    bottom: 55vh;
+    width: 40vw;
+    height: calc(1 / 6 * 40vw);
+}
+
+#hues-display-p3 {
+    position: absolute;
+    left: 30vw;
+    top: 55vh;
+    width: 40vw;
+    height: calc(1 / 6 * 40vw);
+}
+
+body * {
+    mix-blend-mode: multiply !important;
+}
+
+a {
+    font-size: 0.85em;
+}
+
+html {
+    font-size: 0.75em;
+}
